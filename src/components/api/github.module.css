@@ -1,0 +1,50 @@
+.list {
+    columns: 2;
+    list-style: none;
+}
+.search {
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin: 1.3rem;
+}
+.search input[type = 'text'] {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    padding: .5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    font-size: large;
+}
+.search button {
+    position: absolute;
+    right: 0;
+    border: none;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: .9rem;    
+}
+li {
+    margin: 2px;
+    background-color: transparent;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+li:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+    color: #ffff;
+}

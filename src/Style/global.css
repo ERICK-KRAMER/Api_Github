@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #5c12bd81, #0351fab7);
+    animation: animation 4s ease alternate infinite;
+    color: white;
+}
+
+@keyframes animation {
+    from{background-color: #6b31b881;}
+    to{background-color: #37538fb7;}
+}
+
+@keyframes svg {
+    from{color: rgb(255, 255, 255);}
+    to {color: rgba(0, 0, 0, 0.164);}
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+.svg svg {
+    height: 100px;
+    width: 100px;
+    color: white;
+    animation: svg 1.8s ease-in alternate infinite;
+}
