@@ -45,6 +45,6 @@ li {
     transition: .5s ease;
 }
 li:hover {
-    background-color: rgba(0, 0, 0, 0.301);
+    background-color: rgba(0, 0, 0, 0.445);
     color: #ffff;
 }

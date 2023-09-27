@@ -28,11 +28,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 230px;
 }
 .svg svg {
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     color: white;
     animation: svg 1.8s ease-in alternate infinite;
 }

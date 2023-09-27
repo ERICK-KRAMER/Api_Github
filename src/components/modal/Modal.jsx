@@ -12,9 +12,10 @@ export function Modal({ isOpen, setIsOpenModal, getName }) {
     async function getData() {
         try {
             const response = await axios.get(`https://api.github.com/users/${getName}`);
+            const reposResponse = await axios.get(response.data.repos_url)
             setData(response.data);
             setImageProfile(response.data.avatar_url);
-            setRepos(response.data.repos_url)
+            setRepos(reposResponse.data)
             // console.log(repos)
             // console.log(data);
             // console.log(imageProfile);
@@ -37,11 +38,12 @@ export function Modal({ isOpen, setIsOpenModal, getName }) {
                     {data.login && (
                         <div className={style.profile}>
                             <img src={imageProfile} alt={data.name} />
-                            <span>{data.login}</span>
-                            <ul>
-                                {/* {repos.map((item)=>(
+                            <h1>{data.login}</h1>
+                            <h3>Repositórios:</h3>
+                            <ul className={style.repos}>
+                                {repos.map((item)=>(
                                     <li key={item.id}>{item.full_name}</li>
-                                ))} */}
+                                ))}
                             </ul>
                         </div>
                     )}

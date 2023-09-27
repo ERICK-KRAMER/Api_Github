@@ -11,4 +11,8 @@ align-items: center;
 flex-direction: column;
 background-color: transparent;
 border: 1px solid lightgray;
+
+@media screen and (max-width: 650px) {
+    width:400px    
+}
 `

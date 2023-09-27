@@ -25,3 +25,11 @@
     font-weight: 700;
     color: white;
 }
+.repos {
+    columns: 2;
+    list-style: none;
+}
+img{
+    width: 300px;
+    border-radius: 50%;
+}
