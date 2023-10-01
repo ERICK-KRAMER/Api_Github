@@ -40,6 +40,7 @@ export function Github(){
             </div>
             {data.length > 0 && (
                 <>
+                    <h3>Clique no usuario para ver os repositórios</h3> <br/>
                     <ul className={style.list}>
                         {data.map((item) => (
                             <li key={item.id} onClick={() => { setIsOpenModal(true); setGetName(item.login); }} >{item.login}</li>
@@ -48,7 +49,7 @@ export function Github(){
                 </>
             )}
             {error && (
-                <span>{error}</span>
+                <span style={{color:'red'}}>{error}</span>
             )}
             <Modal isOpen={isOpenModal} setIsOpenModal={setIsOpenModal} getName={getName} />
         </>

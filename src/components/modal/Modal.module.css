@@ -26,8 +26,9 @@
     color: white;
 }
 .repos {
-    columns: 2;
+    columns: 3;
     list-style: none;
+    text-align: center;
 }
 img{
     width: 300px;

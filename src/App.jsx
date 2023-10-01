@@ -10,6 +10,7 @@ export function App() {
       <h1 style={{textAlign:'center'}}>Consumindo Api do Github</h1>
       <div className="svg"><FaGithub /></div>
       <Container>
+        <h3>Pesquisa de usuarios do Github</h3>
         <Github />
       </Container>
     </>
